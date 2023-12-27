@@ -1,0 +1,53 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title,
+.info {
+    color: #2A2B38;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+}
+
+.title {
+    align-self: flex-start;
+}
+
+.info {
+    align-self: flex-end;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.support,
+.reject {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    display: block;
+    margin: 4px;
+    padding-left: 26px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.support {
+    border-radius: 8px;
+    background: #15B48E;
+}
+
+.reject {
+    border-radius: 8px;
+    background: #EF6461;
+}

@@ -1,0 +1,12 @@
+.prevpage {
+   display: inherit;
+   justify-content: center;
+   align-items: center;
+   align-self: flex-start;
+}
+
+.prevpage p {
+    position: relative;
+    margin-left: 8px;
+    color: #2A2B38;
+}

@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import ResultBar from "./ResultBar";
+import Card from './Card';
 
 export default function VotingResult() {
+    // TODO: wrapped as component
     return (
-        <>
+        <Card>
             <div>
                 <div>
                     <p>Voting results</p>
@@ -19,7 +21,14 @@ export default function VotingResult() {
                         width={8}
                         height={8}
                         priority
-                    />
+                        />
+                    <Image
+                        src="/eclipse.svg"
+                        alt="Eclipse"
+                        width={8}
+                        height={8}
+                        priority
+                        />
                 </div>
                 <div>
                     <p>Current Votes</p>
@@ -32,6 +41,13 @@ export default function VotingResult() {
                     <Image
                         src="/checked.svg"
                         alt="Checked"
+                        width={8}
+                        height={8}
+                        priority
+                        />
+                    <Image
+                        src="/eclipse.svg"
+                        alt="Eclipse"
                         width={8}
                         height={8}
                         priority
@@ -50,6 +66,6 @@ export default function VotingResult() {
                     <a href="">View all votes</a>
                 </div>
             </div>
-        </>
+        </Card>
     )
 }

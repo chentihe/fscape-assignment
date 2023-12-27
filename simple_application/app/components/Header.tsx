@@ -1,12 +1,16 @@
+import styles from '../styles/Header.module.css';
+
 export default function Header() {
     return (
         <>
-            <div>
-                <p>Lorem ipsum dolor sit amet</p>
-                <div>
-                    <p>Active</p>
+            <div className={styles.header}>
+                <div className={styles.titleContainer}>
+                    <h2 className={styles.title}>Lorem ipsum dolor sit amet</h2>
+                    <span>
+                            <p>Active</p>
+                    </span>
                 </div>
-                <p>Active ends in : 2 days</p>
+                <p className={styles.update}>Active ends in : 2 days</p>
             </div>
         </>
     )
