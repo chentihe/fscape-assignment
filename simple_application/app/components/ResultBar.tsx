@@ -1,16 +1,26 @@
 import Card from './Card';
+import styles from '../styles/ResultBar.module.css';
 
-export default function ResultBar() {
-    // TODO: pass Bar name, votes, percentages from prop
+export default function ResultBar(props: {
+    totalVotes: number,
+    givenVotes: number,
+    progessBar: string,
+    side: boolean
+}) {
+    const { totalVotes, givenVotes, progessBar, side } = props;
+    const progress = givenVotes / totalVotes * 100;
+    const title = side ? "Support" : "Reject";
+
     return (
         <Card>
-            <div>
-                <p>Support</p>
-                <p></p>
-                <p>9,000,000</p>
-                <p>VOTE</p>
-                <p>90</p>
-                <p>%</p>
+            <div className={styles.progressContainer}>
+                <p className={styles.textLeft}>{title}</p>
+                <div className={styles.progressBarContainer}>
+                    <div className={`${styles[progessBar]}`} style={{ width: `${progress}%` }}></div>
+                </div>
+                <p className={styles.textRight}>
+                    {givenVotes} VOTE {progress}%
+                </p>
             </div>
         </Card>
     )

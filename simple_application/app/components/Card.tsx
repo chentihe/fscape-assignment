@@ -4,8 +4,8 @@ export default function Card(props: {
     children: any
 }) {
     return (
-        <>
-            <div className={styles.card}>{props.children}</div>
-        </>
+        <div className={styles.card}>
+            {props.children}
+        </div>
     )
 }

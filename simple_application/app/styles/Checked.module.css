@@ -1,0 +1,17 @@
+.checkedContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text {
+    margin: 0; /* Remove default margin from the paragraph */
+    color: #2A2B38;
+    text-align: right;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+  }
+  

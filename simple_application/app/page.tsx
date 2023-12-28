@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './page.module.css'
 import PrevPage from './components/PrevPage'
 import Header from './components/Header'

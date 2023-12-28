@@ -1,0 +1,82 @@
+.textContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoTitles p {
+    color: #2A2B38;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.infoContents > p {
+    color: #2A2B38;
+    text-align: right;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: row;
+    padding: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: column;
+    padding: auto;
+    width: 100%;
+}
+
+.viewVotes {
+    margin-top: 20px; /* Adjust margin as needed */
+    color: #2A2B38;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    text-decoration-line: underline;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    flex: 1; /* Allow .info to take available space */
+}
+
+.info div {
+    flex: 1; /* Allow each div to grow and take available space */
+    max-width: calc(50% - 20px); /* Set a max-width with some margin between items */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.line {
+    opacity: 0.5;
+    background: #B9BACC;
+    width: 100%; /* Set the line to be 100% wide */
+    height: 1px;
+}
+
+.leftText {
+    float: left;
+}
+
+.rightText {
+    float: right;
+}
