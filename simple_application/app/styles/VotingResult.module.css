@@ -2,24 +2,12 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 24px; /* 171.429% */
-    margin-bottom: 16px;
     margin-top: 6px;
     margin-left: 6px;
 }
 
-.line {
-    width: 836px;
-    height: 1px;
-    opacity: 0.5;
-    background: #B9BACC;
-    margin-left: 6px;
-}
-
 .textContainer {
-    color: #2A2B38;
-    font-family: 'Plus Jakarta Sans';
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 171.429% */
     display: flex;
@@ -28,6 +16,7 @@
 }
 
 .layout {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

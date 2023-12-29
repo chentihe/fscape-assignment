@@ -2,6 +2,7 @@ import ResultBar from "./ResultBar";
 import Card from './Card';
 import styles from '../styles/VotingResult.module.css';
 import Checked from './Checked';
+import Line from "./Line";
 
 export default function VotingResult() {
     // TODO: move mockVote out to page.tsx
@@ -19,7 +20,10 @@ export default function VotingResult() {
     return (
         <Card>
             <p className={styles.title}>Voting results</p>
-            <div className={styles.line}></div>
+            <Line
+                marginTop={16}
+                marginBottom={24}
+            />
             <div className={styles.layout}>
                 <div className={styles.main}>
                     <ResultBar
