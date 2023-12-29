@@ -1,7 +1,11 @@
 import styles from '../styles/Header.module.css';
 import PrevPage from './PrevPage';
 
-export default function Header() {
+export default function Header(props: {
+    day: number
+}) {
+    const { day } = props;
+
     return (
         <div className={styles.header}>
             <PrevPage/>
@@ -11,7 +15,7 @@ export default function Header() {
                         <p>Active</p>
                 </span>
             </div>
-            <p className={styles.update}>Active ends in : 2 days</p>
+            <p className={styles.update}>Active ends in : {day} days</p>
         </div>
     )
 }

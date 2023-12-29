@@ -4,14 +4,12 @@ import styles from '../styles/VotingResult.module.css';
 import Checked from './Checked';
 import Line from "./Line";
 import Container from "./Container";
+import { Vote } from "../types/Vote";
 
-export default function VotingResult() {
-    // TODO: move mockVote out to page.tsx
-    const mockVote = {
-        totalVote: 10000000,
-        supportVote: 9000000,
-        rejectVote: 1000000
-    }
+export default function VotingResult(props: {
+    vote: Vote
+}) {
+    const { vote } = props;
 
     const bgColor = {
         support: "supportProgressBar",
@@ -33,14 +31,14 @@ export default function VotingResult() {
                 <div className={styles.layout}>
                     <div className={styles.main}>
                         <ResultBar
-                            totalVotes={mockVote.totalVote}
-                            givenVotes={mockVote.supportVote}
+                            totalVotes={vote.totalVote}
+                            givenVotes={vote.supportVote}
                             progessBar={bgColor.support}
                             side={true}
                         />
                         <ResultBar
-                            totalVotes={mockVote.totalVote}
-                            givenVotes={mockVote.rejectVote}
+                            totalVotes={vote.totalVote}
+                            givenVotes={vote.rejectVote}
                             progessBar={bgColor.reject}
                             side={false}
                         />
