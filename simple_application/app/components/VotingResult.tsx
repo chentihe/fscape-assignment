@@ -4,6 +4,7 @@ import styles from '../styles/VotingResult.module.css';
 import Checked from './Checked';
 
 export default function VotingResult() {
+    // TODO: move mockVote out to page.tsx
     const mockVote = {
         totalVote: 10000000,
         supportVote: 9000000,
@@ -17,9 +18,7 @@ export default function VotingResult() {
 
     return (
         <Card>
-            <div className={styles.textContainer}>
-                <p>Voting results</p>
-            </div>
+            <p className={styles.title}>Voting results</p>
             <div className={styles.line}></div>
             <div className={styles.layout}>
                 <div className={styles.main}>
@@ -42,20 +41,22 @@ export default function VotingResult() {
                 <div className={styles.info}>
                     <div className={styles.infoTitles}>
                         <p className={styles.leftText}>Quorum</p>
-                        <p>Current Votes</p>
+                        <p className={styles.rowContainer}>
+                            <span>Current Votes</span>
+                            <span className={styles.required}>Required 000K</span>
+                        </p>
                         <p>Differential</p>
-                        <p>Current Differential</p>
+                        <p className={styles.rowContainer}>
+                            <span>Current Differential</span>
+                            <span className={styles.required}>Required 00K</span>
+                        </p>
                         <p>Total Voting Power</p>
                     </div>
                     <div className={styles.infoContents}>
                         <Checked />
-                        <p>Required 000K</p>
                         <p>000K</p>
-
                         <Checked />
-                        <p>Required 000K</p>
-                        <p>000K</p>
-
+                        <p>00.00K</p>
                         <p>00,000,000</p>
                     </div>
                 </div>

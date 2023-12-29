@@ -1,4 +1,3 @@
-import Card from './Card';
 import styles from '../styles/ResultBar.module.css';
 
 export default function ResultBar(props: {
@@ -12,16 +11,14 @@ export default function ResultBar(props: {
     const title = side ? "Support" : "Reject";
 
     return (
-        <Card>
-            <div className={styles.progressContainer}>
-                <p className={styles.textLeft}>{title}</p>
-                <div className={styles.progressBarContainer}>
-                    <div className={`${styles[progessBar]}`} style={{ width: `${progress}%` }}></div>
-                </div>
-                <p className={styles.textRight}>
-                    {givenVotes} VOTE {progress}%
-                </p>
+        <div className={styles.progressContainer}>
+            <p className={styles.textLeft}>{title}</p>
+            <div className={styles.progressBarContainer}>
+                <div className={`${styles[progessBar]}`} style={{ width: `${progress}%` }}></div>
             </div>
-        </Card>
+            <p className={styles.textRight}>
+                {givenVotes.toLocaleString()} VOTE {progress}%
+            </p>
+        </div>
     )
 }

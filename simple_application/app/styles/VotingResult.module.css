@@ -1,82 +1,106 @@
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 16px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.line {
+    width: 836px;
+    height: 1px;
+    opacity: 0.5;
+    background: #B9BACC;
+    margin-left: 6px;
+}
+
 .textContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.infoTitles p {
     color: #2A2B38;
     font-family: 'Plus Jakarta Sans';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 166.667% */
-}
-
-.infoContents > p {
-    color: #2A2B38;
-    text-align: right;
-    font-family: 'Plus Jakarta Sans';
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 166.667% */
+    line-height: 24px; /* 171.429% */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .layout {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-self: flex-start;
-    flex-direction: row;
-    padding: auto;
-}
-
-.main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: flex-start;
-    flex-direction: column;
-    padding: auto;
     width: 100%;
 }
 
+.main,
+.info {
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
 .viewVotes {
-    margin-top: 20px; /* Adjust margin as needed */
+    margin-top: 20px;
     color: #2A2B38;
     font-family: 'Plus Jakarta Sans';
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px;
     text-decoration-line: underline;
 }
 
-.info {
+.infoTitles,
+.infoContents {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    align-self: flex-start;
-    flex: 1; /* Allow .info to take available space */
+}
+
+.infoTitles p,
+.infoContents p {
+    margin: 0;
+}
+
+.infoTitles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.infoContents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .info div {
-    flex: 1; /* Allow each div to grow and take available space */
-    max-width: calc(50% - 20px); /* Set a max-width with some margin between items */
-    margin: 10px; /* Adjust margin as needed */
+    flex: 1;
+    max-width: calc(50% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-.line {
+.rowContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.required {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px; /* 160% */
     opacity: 0.5;
-    background: #B9BACC;
-    width: 100%; /* Set the line to be 100% wide */
-    height: 1px;
-}
-
-.leftText {
-    float: left;
-}
-
-.rightText {
-    float: right;
 }

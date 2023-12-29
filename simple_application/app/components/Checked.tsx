@@ -6,6 +6,7 @@ export default function Checked() {
     <div className={styles.checkedContainer}>
       <p className={styles.text}>Reached</p>
       <Image
+        className={styles.checkedImage}
         src="/checked.png"
         alt="Checked"
         width={8}
