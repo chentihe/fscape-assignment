@@ -4,13 +4,11 @@
 }
 
 .text {
-    margin-right: 10px; /* Add margin to create distance */
     font-size: 12px;
     font-weight: 600;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px;
 }
 
-/* Add a new style for the checked image */
 .checkedImage {
-    margin-left: 5px; /* Adjust margin as needed */
+    margin-left: 5px;
 }

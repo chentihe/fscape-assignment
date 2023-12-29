@@ -5,13 +5,11 @@ export default function Dashboard() {
     return (
         <Card>
             <div className={styles.dashboard}>
-                <div className={styles.title}>
-                    <p>Your Voting</p>
-                </div>
+                <p className={styles.title}>Your Voting</p>
                 <div className={styles.info}>
-                    <div>
-                        <p>Voting Power</p>
-                        <div>
+                    <div className={styles.votingPowerContainer}>
+                        <p className={styles.votingPowerText}>Voting Power</p>
+                        <div className={styles.votingPowerValue}>
                             <span>00,000.00</span>
                             <span>VOTE</span>
                         </div>

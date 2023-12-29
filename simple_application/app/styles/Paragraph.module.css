@@ -1,23 +1,14 @@
-.layout {
-    margin: 28px;
-}
-
-.layout p {
-    width: 95%;
-    white-space: normal;
-}
-
 .title {
     font-size: 14px;
     font-weight: 600;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     margin-bottom: 6px;
 }
 
 .paragraph {
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     word-break: break-all;
     word-wrap: break-word;
 }

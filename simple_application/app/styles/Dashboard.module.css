@@ -1,25 +1,25 @@
 .dashboard {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+}
+
+.title {
+    margin-left: 12px;
 }
 
 .title,
 .info {
-    color: #2A2B38;
-    font-family: 'Plus Jakarta Sans';
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 171.429% */
-}
-
-.title {
-    align-self: flex-start;
+    line-height: 24px;
 }
 
 .info {
-    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 28px;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -29,25 +29,45 @@
 .reject {
     color: #FFF;
     text-align: center;
-    font-family: 'Plus Jakarta Sans';
     font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 166.667% */
+    font-weight: 400;
+    line-height: 20px;
     display: block;
     margin: 4px;
     padding-left: 26px;
     padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 8px;
 }
 
 .support {
-    border-radius: 8px;
     background: #15B48E;
 }
 
 .reject {
-    border-radius: 8px;
     background: #EF6461;
+}
+
+.votingPowerContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.votingPowerText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 4px;
+    margin-left: auto;
+}
+
+.votingPowerValue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
 }

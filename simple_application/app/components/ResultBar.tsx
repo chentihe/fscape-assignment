@@ -17,7 +17,8 @@ export default function ResultBar(props: {
                 <div className={`${styles[progessBar]}`} style={{ width: `${progress}%` }}></div>
             </div>
             <p className={styles.textRight}>
-                {givenVotes.toLocaleString()} VOTE {progress}%
+                {givenVotes.toLocaleString()} VOTE
+                <span>{progress}%</span>
             </p>
         </div>
     )
